@@ -6,6 +6,21 @@ Created with love, code, and coffee by the venerable 💻 [Darian Ross](https://
 
 ---
 
+---
+
+## 🌐 Live Demo
+
+Check out the fully functional live version of this app here:
+
+🔗 **[View Live Demo on GitHub Pages](https://dariansweb.github.io/dys-education-sp-quiz/)**
+
+> Hosted directly from this repository using GitHub Pages. No backend. No build process. Just pure, clean VanillaJS.
+
+---
+
+
+---
+
 ## 🚀 Features
 
 ✅ **Interactive Training Modules**  
