@@ -53,7 +53,7 @@ main {
   border-left: 4px solid #005a9c;
   padding: 1em;
   margin-bottom: 1.5em;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .training-step h3 {
@@ -66,7 +66,7 @@ main {
   background: white;
   border-left: 4px solid #007b5e;
   padding: 1em;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .quiz-options button {
@@ -132,13 +132,13 @@ button[disabled]:hover::after {
 .certificate-container {
   width: 100%;
   max-width: 600px;
-  margin: 2em auto;
+  margin: 3em auto;
   padding: 2em;
   text-align: center;
   background-color: white;
   border: 4px double #005a9c;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  font-family: 'Georgia', serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: "Georgia", serif;
 }
 
 .certificate-container h1 {
@@ -204,4 +204,49 @@ button[disabled]:hover::after {
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
+}
+
+.retake-btn {
+  margin-top: 1em;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #005a9c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.retake-btn:hover {
+  background-color: #00437a;
+  transform: translateY(-2px);
+}
+
+.retake-btn:active {
+  background-color: #00325c;
+  transform: translateY(0);
+}
+
+.pdf-only-hide {
+  display: inline-block;
+}
+
+@keyframes popIn {
+  0%   { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.retake-btn {
+  animation: popIn 0.3s ease-out;
+}
+
+
+/* When html2pdf renders, it uses a shadow DOM for cloning. 
+   The easiest way to hide stuff during that process is with print media! */
+@media print {
+  .pdf-only-hide {
+    display: none !important;
+  }
 }

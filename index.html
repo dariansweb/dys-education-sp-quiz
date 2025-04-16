@@ -22,7 +22,6 @@
     <main>
       <section id="training" class="hidden"></section>
       <section id="quiz" class="hidden"></section>
-      <section id="certificate" class="hidden"></section>
       <section id="certificate" class="hidden">
         <div id="certificateContent" class="certificate-container">
           <h2>Certificate of Completion</h2>
@@ -41,7 +40,7 @@
               placeholder="Full Name"
               required
             />
-            <button type="submit">Generate Certificate</button>
+            <button class="pdf-only-hide" onclick="generatePDF()">📥 Download Certificate</button>
           </form>
         </div>
       </section>

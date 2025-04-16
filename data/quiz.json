@@ -1,23 +1,52 @@
 [
-    {
-      "question": "What is the correct Microsoft login site for external access?",
-      "options": [
-        "login.microsoftonline.com",
-        "gmail.com",
-        "dhs.arkansas.gov",
-        "outlook.com"
-      ],
-      "answer": "login.microsoftonline.com"
-    },
-    {
-      "question": "Which method is used for authentication?",
-      "options": [
-        "Voice Call",
-        "SMS",
-        "Authenticator App",
-        "All of the above"
-      ],
-      "answer": "All of the above"
-    }
-  ]
-  
+  {
+    "question": "What Microsoft login site should users access from outside the DHS network?",
+    "options": [
+      "login.microsoftonline.com",
+      "outlook.office365.com",
+      "microsoftsupport.com",
+      "mydhs.arkansas.gov"
+    ],
+    "answer": "login.microsoftonline.com"
+  },
+  {
+    "question": "Which method is used for authentication?",
+    "options": ["Voice Call", "SMS", "Authenticator App", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What should you do if SharePoint does not automatically load after login?",
+    "options": [
+      "Contact Microsoft",
+      "Restart your computer",
+      "Copy and paste the SharePoint URL into a new tab",
+      "Log in with a different email"
+    ],
+    "answer": "Copy and paste the SharePoint URL into a new tab"
+  },
+  {
+    "question": "What browser setup is recommended before starting the login process?",
+    "options": [
+      "Clear cookies and cache first",
+      "Use a browser not logged into another Office account or switch profiles",
+      "Enable pop-up blocking",
+      "Use Internet Explorer in Compatibility Mode"
+    ],
+    "answer": "Use a browser not logged into another Office account or switch profiles"
+  },
+  {
+    "question": "What is the name of the SharePoint site used in this training?",
+    "options": ["The Hub", "The Garage", "The Portal", "The Dock"],
+    "answer": "The Garage"
+  },
+  {
+    "question": "After logging in, how can you navigate to SharePoint manually?",
+    "options": [
+      "Click the SharePoint icon on the desktop",
+      "Use the App Launcher (waffle icon) in Office 365",
+      "Type 'sharepoint.com' directly",
+      "Call the help desk"
+    ],
+    "answer": "Use the App Launcher (waffle icon) in Office 365"
+  }
+]

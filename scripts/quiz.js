@@ -20,7 +20,7 @@ function showQuestion() {
     quizContainer.innerHTML = `
       <h2>${passed ? "🎉 You Passed!" : "🧐 Quiz Completed"}</h2>
       <p>You scored <strong>${score}</strong> out of ${quizData.length}</p>
-      <button onclick="resetQuiz()">Retake Quiz</button>
+      <button class="retake-btn" onclick="resetQuiz()">Retake Quiz</button>
     `;
 
     // Save pass state
