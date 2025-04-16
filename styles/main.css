@@ -233,6 +233,25 @@ button[disabled]:hover::after {
   display: inline-block;
 }
 
+.welcome-box {
+  max-width: 700px;
+  margin: 3em auto;
+  padding: 2em;
+  background-color: white;
+  border-left: 6px solid #005a9c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.welcome-box h2 {
+  color: #005a9c;
+  margin-top: 0;
+}
+
+
+
 @keyframes popIn {
   0%   { transform: scale(0.8); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }

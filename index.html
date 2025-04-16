@@ -20,6 +20,23 @@
     </nav>
 
     <main>
+      <section id="welcome">
+        <div class="welcome-box">
+          <h2>👋 Welcome to the DYS Garage Training Portal</h2>
+          <p>
+            This training app is designed to guide you step-by-step through accessing the DYS Garage SharePoint site
+            from outside the DHS network using Microsoft login and multi-factor authentication.
+          </p>
+          <p>
+            Once you've completed the training module, you'll take a short quiz to demonstrate your understanding.
+            A passing score will unlock a personalized, downloadable certificate of completion.
+          </p>
+          <p>
+            To begin, click <strong>📚 Training</strong> above. Let’s get started!
+          </p>
+        </div>
+      </section>
+      
       <section id="training" class="hidden"></section>
       <section id="quiz" class="hidden"></section>
       <section id="certificate" class="hidden">
@@ -62,6 +79,7 @@
         });
 
         document.getElementById(id).classList.remove("hidden");
+        document.getElementById("welcome").classList.add("hidden");
 
         if (id === "certificate") {
           loadCertificateForm(); // Manually trigger form logic
