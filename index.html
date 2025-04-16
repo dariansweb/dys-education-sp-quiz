@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DYS Garage Training</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DYS Garage Training & Certification</h1>
+    </header>
+
+    <nav>
+      <button onclick="showSection('training')">📚 Training</button>
+      <button onclick="showSection('quiz')">❓ Quiz</button>
+      <button id="certButton" onclick="showSection('certificate')" disabled>
+        🎓 Certificate
+      </button>
+    </nav>
+
+    <main>
+      <section id="training" class="hidden"></section>
+      <section id="quiz" class="hidden"></section>
+      <section id="certificate" class="hidden"></section>
+      <section id="certificate" class="hidden">
+        <div id="certificateContent" class="certificate-container">
+          <h2>Certificate of Completion</h2>
+          <p>This certifies that</p>
+          <h1 id="certName">[Your Name]</h1>
+          <p>has successfully completed the</p>
+          <h3>DYS Garage Training & Certification</h3>
+          <p class="cert-date" id="certDate"></p>
+        </div>
+        <div id="certificateForm" class="certificate-form">
+          <h3>Enter your name to generate your certificate:</h3>
+          <form id="nameForm">
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Full Name"
+              required
+            />
+            <button type="submit">Generate Certificate</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Department of Youth Services - Education Division</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/training.js"></script>
+    <script src="scripts/quiz.js"></script>
+    <script src="scripts/certificate.js"></script>
+    <script>
+      function showSection(id) {
+        ["training", "quiz", "certificate"].forEach((section) => {
+          document.getElementById(section).classList.add("hidden");
+        });
+
+        document.getElementById(id).classList.remove("hidden");
+
+        if (id === "certificate") {
+          loadCertificateForm(); // Manually trigger form logic
+        }
+      }
+    </script>
+  </body>
+</html>

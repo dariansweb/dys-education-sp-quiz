@@ -1,0 +1,23 @@
+[
+    {
+      "question": "What is the correct Microsoft login site for external access?",
+      "options": [
+        "login.microsoftonline.com",
+        "gmail.com",
+        "dhs.arkansas.gov",
+        "outlook.com"
+      ],
+      "answer": "login.microsoftonline.com"
+    },
+    {
+      "question": "Which method is used for authentication?",
+      "options": [
+        "Voice Call",
+        "SMS",
+        "Authenticator App",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    }
+  ]
+  
